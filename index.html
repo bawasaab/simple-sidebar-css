@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <style>
+        .mob_toggle_icn,
+        .mob_cross_icn {
+            width: 30px;
+            cursor: pointer;
+        }
+
+        .nav_sidebar {
+            width: 0px;
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+            position: absolute;
+            top: 30px;
+            left: -42px;
+            transition: 0.3s ease-in-out;
+        }
+
+        .cros_icn {
+            text-align: right;
+        }
+
+        .nav_toggle .toggle_icon span.togl_icn {
+            width: 30px;
+            height: 30px;
+            display: block;
+        }
+
+        .nav_toggle .toggle_icon {
+            position: relative;
+        }
+
+        .nav_toggle .toggle_icon input[type="checkbox"].togl_check {
+            position: absolute;
+            top: 0px;
+            width: 30px;
+            height: 30px;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .nav_toggle .toggle_icon input.togl_check:checked+.nav_sidebar {
+            width: 240px;
+            left: 0;
+        }
+
+        .cros_icn {
+            position: relative;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+        .cros_icn input.cross_check {
+            position: absolute;
+            top: 9px;
+            width: 30px;
+            height: 30px;
+            opacity: 0;
+            cursor: pointer;
+            left: 7px;
+            z-index: 99;
+        }
+
+        .cros_icn input.cross_check:checked .nav_sidebar {
+            width: 0px;
+            left: -42px;
+        }
+    </style>
+
+    <div class="nav_toggle">
+        <div class="toggle_icon">
+            <span class="togl_icn">
+                <img src="https://static.thenounproject.com/png/345384-200.png" class="mob_toggle_icn" />
+            </span>
+            <input type="checkbox" class="togl_check" />
+            <div class="nav_sidebar">
+                <ul>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
